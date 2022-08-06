@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <header class="text-center">
+                <h1>{{title}}</h1>
+            </header>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="products_list">
+                {{#each products}}
+                <div>
+                    <h1>{{this.name}}</h1>
+                    <p> {{this.description}} </p>
+                    <div>
+                        <img class="img-fluid" src="{{this.imgUrl}}" class="" alt="Product">
+                    </div>
+                    <p> <a href="{{this.navUrl}}"> Read Details</a> </p>
+                </div>
+                {{/each}}
+            </div>
+
+        </div>
+    </div>
+
+
+
+</div>

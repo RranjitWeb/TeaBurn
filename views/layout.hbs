@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <meta property="og:description" content="Globals product deals avalabel">
+  <!-- Favicon  -->
+  <link rel="icon" href="assets/img/favi.png" type="image/svg" sizes="16x16">
+  <title>{{title}}</title>
+  <link rel='stylesheet' href='/assets/css/bootstrap.css' />
+  <link rel='stylesheet' href='/assets/css/style.css' />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-210789318-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-210789318-1');
+  </script>
+</head>
+
+<body>
+  <section class="container">
+    <div class="row">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/">M2 Deals</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/products">Products </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Products Categories
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/health-fitness">Health & fitness</a></li>
+                    <li><a class="dropdown-item" href="/okinawa-tonic">Okinawa</a></li>
+                    <li><a class="dropdown-item" href="/keto-diet">Custom Keto Diet</a></li>
+                    <li><a class="dropdown-item" href="/prosta-stream">Prosta Stream</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/health-fitness">Health & fitness</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact-us">Contact Us</a>
+                </li>
+              </ul>
+              {{!-- <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form> --}}
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <div class="row">
+      <div class="col">
+        {{{body}}}
+      </div>
+    </div>
+  </section>
+  <script src="assets/js/bootstrap.js"></script>
+</body>
+
+</html>
